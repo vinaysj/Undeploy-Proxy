@@ -10,13 +10,15 @@ Execution steps
 
     run $java -jar UndeployRevisions.jar username password protocol domain org environment filepath
 
-example: java -jar undeployRevisions.jar username password http domain orgname env C:/Users/username/Desktop/ProxyList.txt
+example
+$java -jar undeployRevisions.jar username password http domain orgname env C:/Users/username/Desktop/ProxyList.txt
 
 -To store the output to a file use the following command (make sure to stay on internal network when running the below command)
 
     $java -jar UndeployRevision.jar username password protocol domain org environment filepath > /path/filename.txt
 
-example: java -jar undeployRevisions.jar username password http domain orgname env C:/Users/username/Desktop/ProxyList.txt > C:/Users/username/Desktop/Output.txt
+example 
+$java -jar undeployRevisions.jar username password http domain orgname env C:/Users/username/Desktop/ProxyList.txt > C:/Users/username/Desktop/Output.txt
 
 ----
 Description for the arguments being passed in above command
