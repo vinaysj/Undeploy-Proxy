@@ -8,18 +8,19 @@ Execution steps
 
 -In command prompt traverse to the specific path of downloaded jar (make sure to stay on internal network when running the below command for on-prem apigee)
 
-run $java -jar UndeployRevisions.jar username password protocol domain org environment filepath
+    run $java -jar UndeployRevisions.jar username password protocol domain org environment filepath
 
-example: java -jar undeployRevisions.jar username password http 10.158.150.179:8080 zatlab zlab01 C:/Users/username/Desktop/zlab01ProxyList.txt
+example: java -jar undeployRevisions.jar username password http domain orgname env C:/Users/username/Desktop/ProxyList.txt
 
 -To store the output to a file use the following command (make sure to stay on internal network when running the below command)
 
-$java -jar UndeployRevision.jar username password protocol domain org environment filepath > /path/filename.txt
+    $java -jar UndeployRevision.jar username password protocol domain org environment filepath > /path/filename.txt
 
-example: java -jar undeployRevisions.jar username password http 10.158.150.179:8080 zatlab zlab01 C:/Users/username/Desktop/zlab01ProxyList.txt > C:/Users/username/Desktop/zlab01Output.txt
+example: java -jar undeployRevisions.jar username password http domain orgname env C:/Users/username/Desktop/ProxyList.txt > C:/Users/username/Desktop/Output.txt
 
--Description for the arguments being passed in above command
-
+----
+Description for the arguments being passed in above command
+----
     username and password -> credentials used for apigee login
     protocol -> https/http
     domain name -> api.enterprise.apigee.com for saas, if on prem provide the on prem domain name
